@@ -10,7 +10,7 @@ export default function Contacts(props) {
 				<div className='flex flex-col items-center gap-[1rem]  pc:gap-[2vh]'>
 					<input
 						type='text'
-						className='w-[100%] rounded-md bg-lighter-brown px-4 py-[0.5rem] text-[1.4rem] placeholder-white outline-none dark:bg-light-brown
+						className='w-full rounded-md bg-lighter-brown px-4 py-[0.5rem] text-[1.4rem] placeholder-white outline-none dark:bg-light-brown
 								pc:px-[1vw] 
 								pc:py-[1.5vh]
 								pc:text-[1rem]'
@@ -18,7 +18,7 @@ export default function Contacts(props) {
 						required
 					/>
 					<input
-						className='w-[100%] rounded-md bg-lighter-brown px-4 py-[0.5rem] text-[1.4rem] placeholder-white outline-none dark:bg-light-brown
+						className='w-full rounded-md bg-lighter-brown px-4 py-[0.5rem] text-[1.4rem] placeholder-white outline-none dark:bg-light-brown
 								pc:px-[1vw] 
 								pc:py-[1.5vh]
 								pc:text-[1rem]'
@@ -27,7 +27,7 @@ export default function Contacts(props) {
 						required
 					/>
 					<textarea
-						className={`w-[100%] rounded-md bg-lighter-brown px-4 py-[0.5rem]
+						className={`w-full rounded-md bg-lighter-brown px-4 py-[0.5rem]
 								text-[1.4rem]
 								placeholder-white
 								outline-none
@@ -42,7 +42,7 @@ export default function Contacts(props) {
 
 					<button
 						type='submit'
-						className='w-[50%] rounded-full bg-lighter-brown py-[0.5rem] transition-all hover:scale-100 
+						className='w-1/2 rounded-full bg-lighter-brown py-[0.5rem] transition-all hover:scale-100 
 						dark:bg-light-brown pc:w-[30%] pc:py-[1.5vh] pc:hover:w-[35%] pc:active:w-[30%]'
 					>
 						Send
