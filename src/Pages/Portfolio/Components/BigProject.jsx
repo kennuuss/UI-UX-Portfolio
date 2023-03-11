@@ -1,23 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import MdBtn from './MdBtn'
-import { H3 } from './Headlines'
+import { H3, P } from './Headlines'
 
 export default function BigProject(props) {
 	return (
-		<div
-			ref={(project) => props.projectsRefs.push(project)}
-		>
+		<div ref={(project) => props.projectsRefs.push(project)}>
 			<H3>{props.project.title}</H3>
-			<p className='max-w-[60vw] text-center text-[1.6rem] text-black-2 dark:text-white-3 pc:max-w-[20vw] pc:text-left pc:text-[1.2vw]'>
-				{props.project.description}
-			</p>
+			<P>{props.project.description}</P> 
+			
 			<Link
 				to={props.project.path}
 				onClick={() => reload()}
-				className='absolute bottom-[30vh]'
+				className='absolute bottom-0'
 			>
-				<MdBtn>{props.project.btnText}</MdBtn>
+				<button
+					className='rounded-2xl bg-white-3 px-[2rem] text-[1.4rem] font-bold text-white transition-colors dark:bg-black-1 dark:text-gray-text pc:py-[2vh]
+    pc:px-[2.3vw] pc:text-[1.4vw] pc:hover:bg-black pc:dark:hover:bg-black-2'
+				>
+					{props.project.btnText}
+				</button>
 			</Link>
 		</div>
 	)

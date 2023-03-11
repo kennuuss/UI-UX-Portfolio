@@ -64,36 +64,34 @@ export default function MoreAboutMe(props) {
 	}
 	return (
 		<>
-			{techsList.map((item, i) => (
+			{/* {techsList.map((item, i) => (
 				<div key={i} className='mb-[3rem] pc:mb-[3.2vh]'>
 					<H3>{item.title}</H3>
 					<ul className='flex flex-col gap-[1.5rem] pc:gap-[2.5vh]'>
-						{item.title === 'What can I provide'
-							? item.li.map((li, index) => (
-									<li
-										key={index}
-										className='relative flex h-max flex-col items-center gap-[0.4rem] text-center text-black-2 dark:text-white-2 pc:gap-[0.65vh]'
-									>
-										{li.svg}
-										<LineProjects
-											index={index}
-											techsState={techsState}
-											reactProjectsList={reactProjectsList}
-											setIsShowProjects={setIsShowProjects}
-											isShowProjects={isShowProjects}
-											handleTechHover={handleTechHover}
-										/>
-										<MoreAboutMe__PopUp
-											isShowProjects={isShowProjects}
-											setIsShowProjects={setIsShowProjects}
-											reactProjectsList={reactProjectsList}
-										/>
-									</li>
-							  ))
-							: item.li.map((li) => <li className='text-center'>{li}</li>)}
+						{item.li.map((li, index) => (
+							<li
+								key={index}
+								className='relative flex h-max flex-col items-start gap-[0.4rem] text-black-2 dark:text-white-2 pc:gap-[0.65vh]'
+							>
+								{li.svg}
+								<LineProjects
+									index={index}
+									techsState={techsState}
+									reactProjectsList={reactProjectsList}
+									setIsShowProjects={setIsShowProjects}
+									isShowProjects={isShowProjects}
+									handleTechHover={handleTechHover}
+								/>
+								<MoreAboutMe__PopUp
+									isShowProjects={isShowProjects}
+									setIsShowProjects={setIsShowProjects}
+									reactProjectsList={reactProjectsList}
+								/>
+							</li>
+						))}
 					</ul>
 				</div>
-			))}
+			))} */}
 		</>
 	)
 }

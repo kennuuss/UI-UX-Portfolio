@@ -1,6 +1,7 @@
 import React from "react";
 import Review from "../../Components/Reviews/Review";
 import Line from "../../Components/Line";
+import { H2, H3 } from '../../Components/Headlines'
 
 export default function Reviews(props) {
   const reviewsList = [
@@ -25,12 +26,12 @@ export default function Reviews(props) {
   ];
   return (
     <div ref={props.refReviews}>
-      <h2>Feedback</h2>
+      <H2>Feedback</H2>
       <div className="flex flex-col gap-[1rem] pc:flex-row pc:gap-[2vw] ">
         {reviewsList.map((item, i) => (
           <Review {...item} key={i}>
             <div className="flex flex-col justify-center">
-              <h3>{item.name}</h3>
+              <H3>{item.name}</H3>
             </div>
             <Line vertical={false} />
             <p className="text-center text-[1rem] pc:text-[1.2vw]">

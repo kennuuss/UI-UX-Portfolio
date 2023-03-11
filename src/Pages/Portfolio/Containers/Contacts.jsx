@@ -22,9 +22,9 @@ export default function Contacts() {
 		},
 	]
 	return (
-		<footer className='z-10 flex h-[4rem] flex-col items-center dark:text-white pc:h-[10vh]'>
+		<footer className='z-10 flex h-max flex-col items-center dark:text-white'>
 			<nav className='flex h-[100%] justify-center dark:bg-black'>
-				<ul className='flex w-[50vw] justify-between pc:w-[20vw] pc:gap-[3vw]'>
+				<ul className='flex w-[50vw] mb-[1.6rem] pc:mb-[2vw] justify-between pc:w-[20vw] pc:gap-[3vw]'>
 					{linksList.map((item, i) => (
 						<li className='flex items-center' key={i}>
 							<SmallButton>

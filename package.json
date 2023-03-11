@@ -1,7 +1,7 @@
 {
-	"homepage": "https://kennuuss.github.io/UI-UX-learning",
+	"homepage": "https://kennuuss.github.io/UI-UX-Portfolio",
 	"name": "vite-project",
-	"private": true,
+	"private": false,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
@@ -13,8 +13,7 @@
 	},
 	"dependencies": {
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-icons": "^4.7.1"
+		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.24",
@@ -23,10 +22,10 @@
 		"autoprefixer": "^10.4.13",
 		"gh-pages": "^5.0.0",
 		"postcss": "^8.4.21",
-		"postcss-cachebuster": "^0.1.6",
 		"prettier-plugin-tailwindcss": "^0.2.4",
 		"react-router": "^6.8.1",
-		"tailwindcss": "^3.2.4",
-		"vite": "^3.2.3"
+		"react-router-dom": "^6.9.0",
+		"tailwindcss": "^3.2.7",
+		"vite": "^3.2.5"
 	}
 }
