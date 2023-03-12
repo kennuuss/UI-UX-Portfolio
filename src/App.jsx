@@ -41,12 +41,16 @@ export default function App() {
 	return loading === true ? (
 		<Loading />
 	) : (
-		<HashRouter>
+		<Router>
 			<Routes>
 				<Route exact path='/UI-UX-Portfolio' element={<Portfolio />} />
-				<Route exact path='/UI-UX-Portfolio/Restaurant' element={<Restaurant />} />
+				<Route
+					exact
+					path='/UI-UX-Portfolio/Restaurant'
+					element={<Restaurant />}
+				/>
 				<Route exact path='*' element={<Error />} />
 			</Routes>
-		</HashRouter>
+		</Router>
 	)
 }
