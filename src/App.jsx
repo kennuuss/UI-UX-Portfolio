@@ -1,8 +1,7 @@
 import {
 	BrowserRouter as Router,
 	Routes,
-	Route,
-	HashRouter,
+	Route
 } from 'react-router-dom'
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Restaurant from './Pages/Restaurant/Restaurant'
@@ -41,12 +40,12 @@ export default function App() {
 	return loading === true ? (
 		<Loading />
 	) : (
-		<Router>
+		<Router basename='/UI-UX-Portfolio'>
 			<Routes>
-				<Route exact path='/UI-UX-Portfolio' element={<Portfolio />} />
+				<Route exact path='/' element={<Portfolio />} />
 				<Route
 					exact
-					path='/UI-UX-Portfolio/Restaurant'
+					path='/Restaurant'
 					element={<Restaurant />}
 				/>
 				<Route exact path='*' element={<Error />} />
