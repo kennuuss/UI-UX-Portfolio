@@ -18,7 +18,7 @@ export default function Portfolio() {
 			title: 'Restaurant',
 			description:
 				'A warm and pleasant space to spend time with friends or family.',
-			path: '/Restaurant',
+			path: '/UI-UX-Portfolio/Restaurant',
 			btnText: 'Make an order',
 		},
 	]

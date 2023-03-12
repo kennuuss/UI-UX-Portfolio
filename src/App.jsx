@@ -43,8 +43,8 @@ export default function App() {
 	) : (
 		<HashRouter>
 			<Routes>
-				<Route path='/' element={<Portfolio />} />
-				<Route exact path='/Restaurant' element={<Restaurant />} />
+				<Route exact path='/UI-UX-Portfolio' element={<Portfolio />} />
+				<Route exact path='/UI-UX-Portfolio/Restaurant' element={<Restaurant />} />
 				<Route exact path='*' element={<Error />} />
 			</Routes>
 		</HashRouter>
