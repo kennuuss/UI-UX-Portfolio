@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+	HashRouter,
+} from 'react-router-dom'
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Restaurant from './Pages/Restaurant/Restaurant'
 import Error from './Error'
@@ -27,21 +32,6 @@ export default function App() {
 				.addEventListener('change', (e) => {
 					e.matches ? setTheme('dark') : setTheme('light')
 				})
-			/* const currentURL = window.location.pathname
-			let cssFileName = ''
-
-			if (currentURL === '/') {
-				cssFileName = 'Portfolio'
-			} else if (currentURL === '/Restaurant') {
-				cssFileName = 'Restaurant'
-			} else setLoading(false)
-
-			const cssPath = await import(`./CSS/${cssFileName}.css`)
-
-			const linkElement = document.createElement('link')
-			linkElement.rel = 'stylesheet'
-			linkElement.href = cssPath.default
-			document.head.appendChild(linkElement) */
 
 			setLoading(false)
 		}
@@ -51,12 +41,12 @@ export default function App() {
 	return loading === true ? (
 		<Loading />
 	) : (
-		<Router>
+		<HashRouter>
 			<Routes>
 				<Route exact path='/' element={<Portfolio />} />
 				<Route exact path='/Restaurant' element={<Restaurant />} />
 				<Route exact path='*' element={<Error />} />
 			</Routes>
-		</Router>
+		</HashRouter>
 	)
 }
