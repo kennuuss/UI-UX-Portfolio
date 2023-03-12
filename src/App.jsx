@@ -8,7 +8,7 @@ import Restaurant from './Pages/Restaurant/Restaurant'
 import Error from './Error'
 import Loading from './Loading.jsx'
 import { useState, useEffect } from 'react'
-
+/*  */
 export default function App() {
 	const [loading, setLoading] = useState(true)
 
