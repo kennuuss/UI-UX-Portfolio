@@ -25,12 +25,16 @@ module.exports = {
         black: "rgb(25,25,25)",
         "black-1": "rgb(39,39,39)",
         "black-2": "rgb(51,51,51)",
-        "black-3": "rgb(65,65,65)",
 
         /* portfolio - white theme */
         "white-1": "rgb(230,230,230)",
         "white-2": "rgb(200,200,200)",
         "white-3": "rgb(180,180,180)",
+
+        /* experienced */
+        "green": "#0DFD43",
+        "violet": "#B81FFA",
+
         "gray-text": "rgb(116,115,110)",
       },
     },

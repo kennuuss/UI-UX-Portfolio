@@ -17,14 +17,14 @@ export default function Portfolio() {
 		{
 			title: 'Restaurant',
 			description:
-				'A warm and pleasant space to spend time with friends or family.',
-			path: '/UI-UX-Portfolio/Restaurant',
+				'A warm and pleasant place to spend time with family.',
+			path: '/Restaurant',
 			btnText: 'Make an order',
 		},
 	]
 	const blocksList = [
 		{
-			header: 'Welcome!',
+			header: 'Hello',
 			component: <AboutMe blockRefs={blockRefs} />,
 		},
 		{

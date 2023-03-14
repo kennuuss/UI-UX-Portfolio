@@ -12,11 +12,11 @@ function Home(props) {
 			/>
 
 			<div className='absolute top-[120px] items-center px-[2rem] pc:top-[10vh] '>
-				<H1>Brooklyn`s Restaurant</H1>
+				<H1>Restaurant</H1>
 
-				<p className='mt-12 text-center'>
+				<p className='mt-12 text-center text-[1.2rem] text-white-1'>
 					We`re always here to feed you <br />{' '}
-					<span className='whitespace-nowrap text-[24px] font-bold'>
+					<span className='whitespace-nowrap text-[24px] font-bold text-white'>
 						Flatbush Avenue
 					</span>
 				</p>

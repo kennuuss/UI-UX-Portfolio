@@ -40,7 +40,7 @@ export default function App() {
 	return loading === true ? (
 		<Loading />
 	) : (
-		<Router basename='/UI-UX-Portfolio'>
+		<Router>
 			<Routes>
 				<Route exact path='/' element={<Portfolio />} />
 				<Route

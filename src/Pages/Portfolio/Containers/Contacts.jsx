@@ -30,7 +30,7 @@ export default function Contacts() {
 							<SmallButton>
 								<a
 									target='_blank'
-									className=' text-black-2 transition-colors dark:text-white-3 pc:hover:text-black pc:dark:hover:text-white-1 '
+									className=' text-black dark:text-white pc:text-black-2 transition-colors pc:dark:text-white-3 pc:hover:text-black pc:dark:hover:text-white-1 '
 									href={item.link}
 								>
 									{item.svg}

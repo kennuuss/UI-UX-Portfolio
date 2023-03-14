@@ -33,8 +33,7 @@ export default function Reviews(props) {
             <div className="flex flex-col justify-center">
               <H3>{item.name}</H3>
             </div>
-            <Line vertical={false} />
-            <p className="text-center text-[1rem] pc:text-[1.2vw]">
+            <p className="text-center text-[1.5rem] pc:text-[1.2vw]">
               {item.description}
             </p>
           </Review>

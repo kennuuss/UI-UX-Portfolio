@@ -30,7 +30,7 @@ export default function Gallery(props) {
 					/>
 				</div>
 				<nav className='mx-auto flex w-max items-center justify-between pc:w-[30%]'>
-					<Btn onClick={() => changePhoto(-1)} className=' pc:w-[3vw] '>
+					<Btn onClick={() => changePhoto(-1)} className=' pc:w-[3vw] w-[3rem]'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							viewBox='0 0 24 24'
@@ -43,22 +43,6 @@ export default function Gallery(props) {
 							/>
 						</svg>
 					</Btn>
-					{/* <button
-						onClick={() => changePhoto(-1)}
-						className='transition-transform pc:w-[3vw]'
-					>
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							viewBox='0 0 24 24'
-							fill='currentColor'
-						>
-							<path
-								fillRule='evenodd'
-								d='M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z'
-								clipRule='evenodd'
-							/>
-						</svg>
-					</button> */}
 
 					{imgsList.map((item, i) => (
 						<Dot
@@ -71,7 +55,7 @@ export default function Gallery(props) {
 
 					<button
 						onClick={() => changePhoto(+1)}
-						className='transition-transform pc:w-[3vw]'
+						className='transition-transform pc:w-[3vw] w-[3rem]'
 					>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
