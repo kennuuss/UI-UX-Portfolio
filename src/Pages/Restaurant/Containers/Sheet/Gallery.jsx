@@ -22,10 +22,10 @@ export default function Gallery(props) {
 			<H2>Gallery</H2>
 
 			<div className='flex flex-col gap-[1rem] pc:gap-[6vh]'>
-				<div className='h-[70vh] w-full rounded-md bg-gray-300 pc:h-[65vh]'>
+				<div className='h-[70vh] w-full rounded-3xl bg-gray-300 pc:h-[65vh]'>
 					<img
 						src={imgsList[currentImage]}
-						className='h-full w-full rounded-md object-cover text-center text-[1.5rem] text-black'
+						className='h-full w-full rounded-3xl object-cover text-center text-[1.5rem] text-black'
 						alt='Image is no more avilable'
 					/>
 				</div>

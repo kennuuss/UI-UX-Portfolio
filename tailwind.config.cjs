@@ -16,12 +16,18 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				/* restaurant */
-				'dark-brown': '#402923',
-				'light-brown': '#6b4e42',
-				'lighter-brown': '#9d7e6f',
+				restaurant__bg: '#402923' /* darker than primary */,
+				restaurant__text: '#ffffff',
+				restaurant__lessImportantText: 'rgb(250,250,250)',
+				restaurant__primary: '#6b4e42',
+				restaurant__secondary: '#876354' /* lighter than primary */,
 
-				/* experienced */
+				restaurant__darkBg: '#291A16' /* darker than primary  */,
+				restaurant__darkPrimary: '#402923',
+				restaurant__darkSecondary: '#6b4e42' /* lighter than primary */,
+				/* Restaurant */
+
+				/* Portfolio */
 				primary: '#ACBAEC',
 				secondary: '#FFFFFF',
 				abstract: '#C2D2F6' /* /#BBCDF2 */,
@@ -29,8 +35,7 @@ module.exports = {
 				darkPrimary: '#1B2631',
 				darkSecondary: '#FFFFFF',
 				darkAbstract: '#2C3E50',
-
-				'gray-text': 'rgb(116,115,110)',
+				/* Portfolio */
 			},
 		},
 	},

@@ -28,7 +28,7 @@ export default function Restaurant() {
 	}
 
 	return (
-		<div className='bg-dark-brown text-white dark:bg-black'>
+		<div className='text-white bg-restaurant__bg dark:bg-restaurant__darkBg'>
 			<Header
 				toPhotos={ScrollToPhotos}
 				toHome={ScrollToHome}

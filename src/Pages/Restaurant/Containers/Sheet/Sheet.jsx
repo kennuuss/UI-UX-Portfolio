@@ -9,9 +9,10 @@ export default function Sheet(props) {
 			ref={props.refSheet}
 			className='
 			z-[10] mt-[-10vh] flex flex-col gap-[8rem]
-			bg-light-brown 
-			p-[2rem] dark:bg-dark-brown pc:w-[70vw]
-			pc:gap-[15vh] pc:rounded-t-3xl pc:p-[5vw]'
+			bg-restaurant__primary
+			p-[2rem]
+			dark:bg-restaurant__darkPrimary pc:w-[70vw]
+			pc:gap-[15vh] pc:rounded-t-3xl pc:py-[5vh] pc:px-[3vw]'
 		>
 			<Gallery refPhotos={props.refPhotos} />
 			<Reviews refReviews={props.refReviews} />

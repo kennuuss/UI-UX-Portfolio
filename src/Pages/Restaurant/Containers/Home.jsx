@@ -11,20 +11,20 @@ function Home(props) {
 				alt='Brooklyn`s restaurant'
 			/>
 
-			<div className='absolute top-[120px] items-center px-[2rem] pc:top-[10vh] '>
+			<div className='absolute top-[80px] items-center px-[2rem] pc:top-[5vh] '>
 				<H1>Restaurant</H1>
 
-				<p className='mt-12 text-center text-[1.2rem] text-white-1'>
+				<p className='text-white-1 text-center text-[1.2rem] text-restaurant__lessImportantText'>
 					We`re always here to feed you <br />{' '}
-					<span className='whitespace-nowrap text-[24px] font-bold text-white'>
+					<span className='text-[24px] font-bold text-restaurant__text'>
 						Flatbush Avenue
 					</span>
 				</p>
 			</div>
 			<button
 				onClick={props.toMain}
-				className='absolute bottom-[100px] w-[3rem] 
-				transition-transform pc:top-[80vh] pc:w-[3vw]'
+				className='absolute bottom-[80px] w-[3rem] 
+				transition-transform pc:bottom-[5vh] pc:w-[3vw]'
 			>
 				<svg
 					xmlns='http://www.w3.org/2000/svg'
