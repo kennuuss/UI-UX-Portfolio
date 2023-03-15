@@ -20,7 +20,7 @@ export default function ThemeSwitcher(props) {
 
   useEffect(() => {
     const handleScroll = () => {
-      const topOffset = props.blockRefs[1].offsetTop;
+      const topOffset = props.blockRefs[1].offsetTop -10;
       const scrollTop = document.documentElement.scrollTop;
       setShow(scrollTop > topOffset);
     };

@@ -7,7 +7,7 @@ export default function ScrollTop(props) {
   const [showBtn, setShow] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      const topOffset = props.blockRefs[1].offsetTop;
+      const topOffset = props.blockRefs[1].offsetTop -10;
       const scrollTop = document.documentElement.scrollTop;
       setShow(true && scrollTop > topOffset);
     };

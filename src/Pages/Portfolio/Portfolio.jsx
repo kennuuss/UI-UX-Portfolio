@@ -40,7 +40,7 @@ export default function Portfolio() {
 	]
 	return (
 		<>
-			<main className='flex flex-col gap-[6rem] dark:bg-black  dark:text-white pc:gap-[15vh]'>
+			<main className='flex flex-col dark:bg-darkPrimary bg-primary gap-[6rem] dark:text-white pc:gap-[15vh]'>
 				{blocksList.map((item, i) => (
 					<Block
 						item={item}

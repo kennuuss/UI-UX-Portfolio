@@ -22,15 +22,15 @@ export default function Contacts() {
 		},
 	]
 	return (
-		<footer className='z-10 flex h-max flex-col items-center dark:text-white'>
-			<nav className='flex h-full justify-center dark:bg-black'>
+		<footer className='flex h-max flex-col items-center'>
+			<nav className='flex h-full justify-center'>
 				<ul className='mb-[1.6rem] flex w-[50vw] justify-between pc:mb-[2vw] pc:w-[20vw] pc:gap-[3vw]'>
 					{linksList.map((item, i) => (
 						<li className='flex items-center' key={i}>
 							<SmallButton>
 								<a
 									target='_blank'
-									className=' text-black dark:text-white pc:text-black-2 transition-colors pc:dark:text-white-3 pc:hover:text-black pc:dark:hover:text-white-1 '
+									className='text-secondary hover:opacity-90 active:opacity-80 dark:text-darkSecondary'
 									href={item.link}
 								>
 									{item.svg}
