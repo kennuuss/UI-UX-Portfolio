@@ -14,7 +14,7 @@ export default function BigProject(props) {
 				<P>{props.project.description}</P>
 			</div>
 
-			<Link to={props.project.path}>
+			<Link to={props.project.path} onClick={()=> scrollTo(0, 0)}>
 				<MdBtn> {props.project.btnText}</MdBtn>
 			</Link>
 		</div>

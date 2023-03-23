@@ -3,6 +3,7 @@ import Sheet from './Containers/Sheet/Sheet'
 import { useRef } from 'react'
 import Header from './Containers/Header'
 import ThemeSwitcher from './Containers/ThemeSwitcher'
+import BackBtn from './../Portfolio/Components/BackBtn'
 
 export default function Restaurant() {
 	const refSheet = useRef()
@@ -28,7 +29,7 @@ export default function Restaurant() {
 	}
 
 	return (
-		<div className='text-white bg-restaurant__bg dark:bg-restaurant__darkBg'>
+		<div className='bg-restaurant__bg text-white dark:bg-restaurant__darkBg'>
 			<Header
 				toPhotos={ScrollToPhotos}
 				toHome={ScrollToHome}
@@ -48,6 +49,7 @@ export default function Restaurant() {
 			<span className='fixed top-6 right-6 ml-4 hidden pc:block'>
 				<ThemeSwitcher />
 			</span>
+			<BackBtn />
 		</div>
 	)
 }
