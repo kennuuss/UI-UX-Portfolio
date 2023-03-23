@@ -1,5 +1,5 @@
 import React from 'react'
-import { H1 } from '../Components/Headlines'
+import { H1, P } from '../Components/Headlines'
 
 function Home(props) {
 	return (
@@ -11,19 +11,12 @@ function Home(props) {
 				alt='Brooklyn`s restaurant'
 			/>
 
-			<div className='absolute top-[80px] items-center px-[2rem] pc:top-[5vh] '>
+			<div className='absolute top-[16vh] items-center px-[2rem] pc:top-[5vh] '>
 				<H1>Restaurant</H1>
-
-				<p className='text-white-1 text-center text-[1.2rem] text-restaurant__lessImportantText'>
-					We`re always here to feed you <br />{' '}
-					<span className='text-[24px] font-bold text-restaurant__text'>
-						Flatbush Avenue
-					</span>
-				</p>
 			</div>
 			<button
 				onClick={props.toMain}
-				className='absolute bottom-[80px] w-[3rem] 
+				className='absolute bottom-[4vh] w-[3rem] 
 				transition-transform pc:bottom-[5vh] pc:w-[3vw]'
 			>
 				<svg

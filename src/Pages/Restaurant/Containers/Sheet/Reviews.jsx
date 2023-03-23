@@ -1,30 +1,28 @@
 import React from 'react'
 import Review from '../../Components/Reviews/Review'
-import { H2, H3 } from '../../Components/Headlines'
+import { H2, H3, P } from '../../Components/Headlines'
+import MdBtn from './../../Components/MdBtn'
 
 export default function Reviews(props) {
 	const reviewsList = [
 		{
-			name: 'Marko',
-			rate: 5,
+			name: 'Carlo S.',
 			description:
-				'It was AWESOME, top notch service, very tasty food prepared quickly. I`ll definitely come here often.',
+				"The food didn't take as long to prepare as other restaurants nearby and the environment is very cozy.",
 		},
 		{
-			name: 'Roman',
-			rate: 3,
+			name: 'Stepan G.',
 			description:
-				'Not entirely impressed, the food was served quite well and quickly, but the staff did not please me, they were all dissatisfied, and the bartender was rude to me.',
+				"I really liked the atmosphere, it's a quiet place where the lighting is perfectly adjusted and the food is beautifully served. 10/10 for these prices.",
 		},
 		{
-			name: 'Sabina',
-			rate: 4,
+			name: 'Roman P.',
 			description:
-				"I didn't care where to go, the main thing is to eat quickly. the staff was polite, the interior is very comfortable and beautiful",
+				'I liked that there is a subway near the restaurant, and if you need to leave, it does not take long to return.',
 		},
 	]
 	return (
-		<div ref={props.refReviews}>
+		<div ref={props.refReviews} className='flex flex-col items-center'>
 			<H2>Feedback</H2>
 			<div className='flex flex-col gap-[1rem] pc:flex-row pc:gap-[2vw] '>
 				{reviewsList.map((item, i) => (
@@ -32,12 +30,11 @@ export default function Reviews(props) {
 						<div className='flex flex-col justify-center'>
 							<H3>{item.name}</H3>
 						</div>
-						<p className='text-center text-[1.5rem] text-restaurant__lessImportantText pc:text-[1.2vw]'>
-							{item.description}
-						</p>
+						<P className=' text-left '>{item.description}</P>
 					</Review>
 				))}
 			</div>
+			<MdBtn className=' mt-[1rem] pc:mt-[4vw]'>View More</MdBtn>
 		</div>
 	)
 }

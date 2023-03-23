@@ -1,41 +1,55 @@
 import React from 'react'
-import { H3, P } from '../Components/Headlines'
+import { H3, P, H4 } from '../Components/Headlines'
 import MdBtn from './../Components/MdBtn'
 
-export default function MoreAboutMe(props) {
+export default function MoreAboutMe() {
 	const blocksList = [
 		{
 			title: 'Why me?',
 			content: [
-				'I will provide you a design that will make the growth of your business 3x faster.',
+				'You will ensure three times faster growth of your business with my UI design.',
+				'All my clients have been amazed at how quickly I respond to their needs.',
 			],
 		},
 		{
-			title: 'What you get?',
+			title: 'My expertise',
 			content: [
-				'I have experience with React and AdobeXD, which will help you quickly make a prototype of the project.',
+				<H4>UI Design</H4>,
+				<H4>UX Design</H4>,
+				<H4>Visual Design</H4>,
+				<H4>Mobile Design</H4>,
 			],
 		},
 	]
 	return (
-		<div className='flex min-h-[70vh] w-full flex-col justify-between'>
-			<div className='flex w-full flex-col items-center pc:flex-row pc:items-baseline pc:justify-between '>
-				{blocksList.map((item) => (
-					<div className='flex flex-col pc:items-start'>
-						<H3>{item.title}</H3>
-						<ul className='flex flex-col'>
+		<div className='flex min-h-[70vh] w-full flex-col items-start pc:items-center justify-between'>
+			<div className='flex w-full flex-col justify-between pc:flex-row'>
+				{blocksList.map((item, i) => (
+					<div className='flex flex-col'>
+						<H3
+							className={`w-full ${
+								i === blocksList.length - 1 && ' pc:text-right '
+							}`}
+						>
+							{item.title}
+						</H3>
+						<ul className='flex w-full flex-col gap-[1.5rem] pc:gap-[3vh]'>
 							{item.content.map((li) => (
-								<li className='mb-[3rem] pc:mb-[3vh]'>
-									<P>{li}</P>
+								<li>
+									<P
+										className={`${
+											i === blocksList.length - 1 && ' pc:text-right '
+										}`}
+									>
+										{li}
+									</P>
 								</li>
 							))}
 						</ul>
 					</div>
 				))}
 			</div>
-			<div className='flex flex-col gap-[1rem] pc:gap-[3vh] items-center'>
-				<MdBtn className=' mt-[3rem] pc:mt-0'>Contact Me</MdBtn>
-			</div>
+			<MdBtn className=' mt-[3rem] pc:mt-[3vw] '>Contact Me</MdBtn>
 		</div>
 	)
 }

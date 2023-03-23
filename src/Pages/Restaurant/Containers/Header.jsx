@@ -71,11 +71,7 @@ export default function Header(props) {
 	]
 
 	return (
-		<header
-			className='fixed left-0 right-0 top-0 
-			z-[50] flex h-[12vh] items-center justify-center bg-restaurant__primary
-			shadow-xl transition-all dark:bg-restaurant__darkPrimary pc:top-[-8vh] pc:h-[10vh] pc:w-[50vw] pc:translate-x-1/2 pc:rounded-b-lg pc:hover:top-0'
-		>
+		<header className='fixed top-0 left-0 right-0 z-[50] flex h-[12vh] items-center justify-center bg-restaurant__primary shadow-xl transition-all dark:bg-restaurant__darkPrimary pc:top-[-8vh] pc:h-[10vh] pc:w-[50vw] pc:translate-x-1/2 pc:rounded-b-[1.6vw] pc:hover:top-0'>
 			<ul className='flex list-none justify-between gap-[2rem] pc:gap-[3vw]'>
 				{list.map((item, i) => (
 					<li>

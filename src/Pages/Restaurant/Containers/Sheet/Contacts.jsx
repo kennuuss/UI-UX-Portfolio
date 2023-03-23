@@ -1,5 +1,6 @@
 import React from 'react'
 import { H2 } from '../../Components/Headlines'
+import MdBtn from '../../Components/MdBtn'
 
 export default function Contacts(props) {
 	return (
@@ -7,34 +8,28 @@ export default function Contacts(props) {
 			<H2>Contacts</H2>
 
 			<form onSubmit={console.log('Form was submited')}>
-				<div className='flex flex-col items-center gap-[1rem]  pc:gap-[2vh]'>
+				<div className='flex flex-col items-center gap-[1rem]  pc:gap-[2vw]'>
 					<input
 						type='text'
-						className='w-full rounded-md bg-restaurant__secondary px-4 py-[0.5rem] text-[1.4rem] placeholder-restaurant__lessImportantText outline-none dark:bg-restaurant__darkSecondary pc:px-[1vw]  pc:py-[1.5vh] pc:text-[1rem]'
+						className='w-full  rounded-3xl bg-restaurant__secondary px-4 py-[0.5rem] text-[1.4rem] placeholder-restaurant__lessImportantText outline-none dark:bg-restaurant__darkSecondary pc:rounded-[1.6vw] pc:px-[1vw]  pc:py-[1.5vh] pc:text-[1.6vw]'
 						placeholder='Your Name'
 						required
 					/>
 					<input
-						className='w-full rounded-md bg-restaurant__secondary px-4 py-[0.5rem] text-[1.4rem] placeholder-restaurant__lessImportantText outline-none dark:bg-restaurant__darkSecondary pc:px-[1vw]  pc:py-[1.5vh] pc:text-[1rem]'
+						className='w-full  rounded-3xl bg-restaurant__secondary px-4 py-[0.5rem] text-[1.4rem] placeholder-restaurant__lessImportantText outline-none dark:bg-restaurant__darkSecondary pc:rounded-[1.6vw] pc:px-[1vw]  pc:py-[1.5vh] pc:text-[1.6vw]'
 						type='mail'
 						placeholder='Your Mail'
 						required
 					/>
 					<textarea
-						className={`w-full rounded-md bg-restaurant__secondary px-4 py-[0.5rem] text-[1.4rem] placeholder-restaurant__lessImportantText outline-none dark:bg-restaurant__darkSecondary pc:px-[1vw] pc:py-[1.5vh] pc:text-[1rem]`}
+						className={`w-full rounded-3xl bg-restaurant__secondary px-4 py-[0.5rem] text-[1.4rem] placeholder-restaurant__lessImportantText outline-none dark:bg-restaurant__darkSecondary pc:rounded-[1.6vw] pc:px-[1vw] pc:py-[1.5vh]  pc:text-[1.6vw]`}
 						rows={4}
 						placeholder='Your Feedback'
 						required
 					/>
-
-					<button
-						type='submit'
-						className='mt-[1rem] w-1/2 rounded-full bg-restaurant__secondary py-[0.5rem] text-[1.5rem] transition-all hover:scale-100 dark:bg-restaurant__darkSecondary pc:w-[30%] pc:py-[1.5vh] pc:text-[1.5vw] pc:hover:w-[35%] pc:active:w-[30%]'
-					>
-						Send
-					</button>
 				</div>
 			</form>
+			<MdBtn className=' mt-[2rem] pc:mt-[4vw] '>Send</MdBtn>
 		</div>
 	)
 }

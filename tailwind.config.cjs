@@ -18,7 +18,7 @@ module.exports = {
 			colors: {
 				restaurant__bg: '#402923' /* darker than primary */,
 				restaurant__text: '#ffffff',
-				restaurant__lessImportantText: 'rgb(250,250,250)',
+				restaurant__lessImportantText: 'rgb(235,235,235)',
 				restaurant__primary: '#6b4e42',
 				restaurant__secondary: '#876354' /* lighter than primary */,
 

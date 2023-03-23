@@ -21,20 +21,21 @@ export default function Gallery(props) {
 		<div ref={props.refPhotos}>
 			<H2>Gallery</H2>
 
-			<div className='flex flex-col gap-[1rem] pc:gap-[6vh]'>
-				<div className='h-[70vh] w-full rounded-3xl bg-gray-300 pc:h-[65vh]'>
+			<div className='flex flex-col gap-[1rem] pc:gap-[2vw]'>
+				<div className='h-[70vh] w-full rounded-3xl pc:h-[65vh]  pc:rounded-[1.6vw]'>
 					<img
 						src={imgsList[currentImage]}
-						className='h-full w-full rounded-3xl object-cover text-center text-[1.5rem] text-black'
+						className='h-full w-full rounded-3xl object-cover  text-center text-[1.5rem] text-black pc:rounded-[1.6vw]'
 						alt='Image is no more avilable'
 					/>
 				</div>
 				<nav className='mx-auto flex w-max items-center justify-between pc:w-[30%]'>
-					<Btn onClick={() => changePhoto(-1)} className=' pc:w-[3vw] w-[3rem]'>
+					<Btn onClick={() => changePhoto(-1)} className=' pc:block hidden'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							viewBox='0 0 24 24'
 							fill='currentColor'
+							className='w-full'
 						>
 							<path
 								fillRule='evenodd'
@@ -44,22 +45,22 @@ export default function Gallery(props) {
 						</svg>
 					</Btn>
 
-					{imgsList.map((item, i) => (
-						<Dot
-							i={i}
-							setImg={setImage}
-							isActive={currentImage === i ? true : false}
-							key={i}
-						/>
-					))}
+					<div className='mx-[2rem] flex gap-[1rem] pc:mx-[4vw] pc:gap-[2vw]'>
+						{imgsList.map((item, i) => (
+							<Dot
+								i={i}
+								setImg={setImage}
+								isActive={currentImage === i ? true : false}
+								key={i}
+							/>
+						))}
+					</div>
 
-					<button
-						onClick={() => changePhoto(+1)}
-						className='transition-transform pc:w-[3vw] w-[3rem]'
-					>
+					<Btn onClick={() => changePhoto(+1)} className=' pc:block hidden'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							viewBox='0 0 24 24'
+							className='w-full'
 							fill='currentColor'
 						>
 							<path
@@ -68,7 +69,7 @@ export default function Gallery(props) {
 								clipRule='evenodd'
 							/>
 						</svg>
-					</button>
+					</Btn>
 				</nav>
 			</div>
 		</div>

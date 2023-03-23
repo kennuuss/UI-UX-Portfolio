@@ -6,7 +6,7 @@ import MdBtn from './MdBtn'
 export default function BigProject(props) {
 	return (
 		<div
-			className='flex flex-col min-h-[70vh] items-center pc:items-start justify-between h-full'
+			className='flex flex-col min-h-[70vh] items-start justify-between h-full'
 			ref={(project) => props.projectsRefs.push(project)}
 		>
 			<div className=''>
