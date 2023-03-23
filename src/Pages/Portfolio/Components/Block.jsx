@@ -8,7 +8,7 @@ export default function Block(props) {
 			className={`flex min-h-screen flex-col items-center 
 		 	px-[3rem] py-[8vh] box-border
 			pc:px-[10vw] ${
-				props.item.header === 'Hello' && ' justify-between '
+				props.item.header === 'Hello' && ' justify-between h-screen '
 			} `}
 		>
 			<H2>{props.item.header}</H2>
