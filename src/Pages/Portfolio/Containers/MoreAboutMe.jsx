@@ -26,22 +26,18 @@ export default function MoreAboutMe() {
 			<div className='flex w-full flex-col justify-between pc:gap-[6vh]'>
 				{blocksList.map((item, i) => (
 					<div className='flex flex-col'>
-						<H3>
-							{item.title}
-						</H3>
+						<H3>{item.title}</H3>
 						<ul className='flex w-full flex-col gap-[1.5rem] pc:gap-[3vh]'>
 							{item.content.map((li) => (
 								<li>
-									<P>
-										{li}
-									</P>
+									<P>{li}</P>
 								</li>
 							))}
 						</ul>
 					</div>
 				))}
+				<MdBtn className=' mt-[4rem] w-max pc:mt-[6vh] '>Contact Me</MdBtn>
 			</div>
-			<MdBtn className=' mt-[3rem] pc:mt-[3vw] '>Contact Me</MdBtn>
 		</div>
 	)
 }

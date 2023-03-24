@@ -19,7 +19,10 @@ export function H2(props) {
 export function H3(props) {
 	return (
 		<h3
-			className={`mb-[2rem] mt-[4rem]	text-left text-[3rem] font-[500] text-secondary dark:text-darkSecondary pc:mb-[3vh]
+			className={` text-left text-[3rem] font-[500] 
+			text-secondary dark:text-darkSecondary
+			pc:mt-[6vh] pc:mb-[3vh]	
+			mb-[2rem] mt-[4rem]
 			pc:text-[4vw] ${props.className ? props.className : null}`}
 		>
 			{props.children}
