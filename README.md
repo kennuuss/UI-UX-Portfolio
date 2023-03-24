@@ -1,10 +1,5 @@
 # Sabina`s UI&UX Portfolio
 
-## Navigation
-+ [Why I made it?](#why-i-made-it)
-+ [How to dev it?](#how-to-dev-it)
-+ [Techs I used here](#techs-i-used-here)
-
 ## Why I made it?
 + 💼 To show my skills to potential employers or friends 😉
 + ⚙️ To be able to [host](https://sabina-l.netlify.app/) it.
