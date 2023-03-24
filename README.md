@@ -4,7 +4,6 @@
 + [Why I made it?](#why-i-made-it)
 + [How to dev it?](#how-to-dev-it)
 + [Techs I used here](#techs-i-used-here)
-+ [My Socials](#my-socials)
 
 ## Why I made it?
 + 💼 To show my skills to potential employers or friends 😉
