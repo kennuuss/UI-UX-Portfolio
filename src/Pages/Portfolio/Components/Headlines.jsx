@@ -20,7 +20,7 @@ export function H3(props) {
 	return (
 		<h3
 			className={`my-[3rem]	 text-left 
-			 text-[3rem] font-[500] text-secondary dark:text-darkSecondary pc:my-[3vh] 
+			 text-[3rem] font-[500] text-secondary dark:text-darkSecondary pc:mb-[3vh]
 			pc:text-[4vw] ${props.className ? props.className : null}`}
 		>
 			{props.children}

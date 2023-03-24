@@ -22,25 +22,17 @@ export default function MoreAboutMe() {
 		},
 	]
 	return (
-		<div className='flex min-h-[70vh] w-full flex-col items-start pc:items-center justify-between'>
-			<div className='flex w-full flex-col justify-between pc:flex-row'>
+		<div className='flex w-full flex-col items-start justify-between'>
+			<div className='flex w-full flex-col justify-between pc:gap-[6vh]'>
 				{blocksList.map((item, i) => (
 					<div className='flex flex-col'>
-						<H3
-							className={`w-full ${
-								i === blocksList.length - 1 && ' pc:text-right '
-							}`}
-						>
+						<H3>
 							{item.title}
 						</H3>
 						<ul className='flex w-full flex-col gap-[1.5rem] pc:gap-[3vh]'>
 							{item.content.map((li) => (
 								<li>
-									<P
-										className={`${
-											i === blocksList.length - 1 && ' pc:text-right '
-										}`}
-									>
+									<P>
 										{li}
 									</P>
 								</li>
