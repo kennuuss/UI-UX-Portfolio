@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import {
 	ScrollTop,
 	ThemeSwitcher,
-	AboutMe,
+	Hello,
 	Projects,
 	Contacts,
 	MoreAboutMe,
@@ -25,7 +25,7 @@ export default function Portfolio() {
 	const blocksList = [
 		{
 			header: 'Hello',
-			component: <AboutMe blockRefs={blockRefs} />,
+			component: <Hello blockRefs={blockRefs} />,
 		},
 		{
 			header: 'About Me',
