@@ -5,7 +5,7 @@ export default function Block(props) {
 	return (
 		<section
 			ref={props.blockRef}
-			className={`box-border flex min-h-screen flex-col 
+			className={`box-border flex min-h-[84vh] pc:min-h-screen flex-col 
 		 	items-center px-[3rem] py-[8vh]
 			pc:px-[10vw] ${props.item.header === 'Hello' && ' h-screen justify-between '} `}
 		>
