@@ -36,7 +36,9 @@ export default function MoreAboutMe() {
 						</ul>
 					</div>
 				))}
-				<MdBtn className=' mt-[4rem] w-max pc:mt-[6vh] '>Contact Me</MdBtn>
+				<MdBtn className=' mt-[4rem] w-max pc:mt-[6vh] '>
+					<a href='mailto:kennuuss1@gmail.com?subject=Portfolio?Contact'>Contact Me</a>{' '}
+				</MdBtn>
 			</div>
 		</div>
 	)

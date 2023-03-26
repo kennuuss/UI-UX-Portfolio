@@ -16,8 +16,7 @@ export default function Portfolio() {
 	const projects = [
 		{
 			title: 'Restaurant',
-			description:
-				'A warm and pleasant place to spend time with family.',
+			description: 'A warm and pleasant place to spend time with family.',
 			path: '/Restaurant',
 			btnText: 'Make an order',
 		},
@@ -40,7 +39,7 @@ export default function Portfolio() {
 	]
 	return (
 		<>
-			<main className='flex flex-col dark:bg-darkPrimary bg-primary gap-[6rem] dark:text-white pc:gap-[15vh]'>
+			<main className='flex flex-col gap-[6rem] bg-primary dark:bg-darkPrimary dark:text-white pc:gap-[15vh]'>
 				{blocksList.map((item, i) => (
 					<Block
 						item={item}

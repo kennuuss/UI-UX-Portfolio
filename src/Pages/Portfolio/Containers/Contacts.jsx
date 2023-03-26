@@ -23,23 +23,21 @@ export default function Contacts() {
 	]
 	return (
 		<footer className='flex h-max flex-col items-center'>
-			<nav className='flex h-full justify-center'>
-				<ul className='mb-[1.6rem] flex w-[50vw] justify-between pc:mb-[2vw] pc:w-[20vw] pc:gap-[3vw]'>
-					{linksList.map((item, i) => (
-						<li className='flex items-center' key={i}>
-							<SmallButton>
-								<a
-									target='_blank'
-									className='text-secondary hover:opacity-90 active:opacity-80 dark:text-darkSecondary'
-									href={item.link}
-								>
-									{item.svg}
-								</a>
-							</SmallButton>
-						</li>
-					))}
-				</ul>
-			</nav>
+			<ul className='my-[1.6rem] flex w-[50vw] justify-between pc:my-[2vw] pc:w-[20vw] pc:gap-[3vw]'>
+				{linksList.map((item, i) => (
+					<li className='flex items-center' key={i}>
+						<SmallButton>
+							<a
+								target='_blank'
+								className='text-secondary dark:text-darkSecondary'
+								href={item.link}
+							>
+								{item.svg}
+							</a>
+						</SmallButton>
+					</li>
+				))}
+			</ul>
 		</footer>
 	)
 }
